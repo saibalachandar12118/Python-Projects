@@ -1,9 +1,11 @@
+# Author  : SAI BALACHANDAR V
+
 import time
 import random
 
 def time_logger(func):
     """
-    Decorator to measure the execution time of any given function.
+    Function to measure the execution time of any given function.
     """
     def wrapper_func(*args, **kwargs):
         start_time = time.time()
@@ -15,7 +17,7 @@ def time_logger(func):
 
 def log_writer(func):
     """
-    Decorator to log the status of the fucntion Execution"
+    Function to log the status of the fucntion Execution"
     """
     def wrapper_log(*args, **kwargs):
         with open('log.txt', 'a') as file:
@@ -25,9 +27,11 @@ def log_writer(func):
             file.write("Function ended: " + func.__name__ + "\n")
         return result
     return wrapper_log
+    
+# time_logger → log_writer → compute_average this how the decorator works while execution
 
-@time_logger   # time_logger → log_writer → compute_average this how the decorator works while execution
-@log_writer
+@time_logger    
+@log_writer    
 def compute_average(data):
     """
     Function to compute the average value of a list of numbers.
