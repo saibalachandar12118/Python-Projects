@@ -49,7 +49,7 @@ def point_generator(*args):
 points  =  point_generator([0, 0],[2, 0],[1, 1.25],[0, 2],[2, 3]) # input vertices
 
 '''
-below function generates 10K times the above function and generate points inside the given vertices randomly
+below code snippet will call  the above function 10K times and generate points inside the given vertices randomly each time
 and write the generated points as CSV file.
 '''
 file_name = "Generated_points.csv"
