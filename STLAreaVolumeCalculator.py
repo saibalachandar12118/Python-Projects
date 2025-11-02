@@ -9,7 +9,7 @@ class STLAreaVolumeCalculator:
         Author  : SAI BALACHANDAR V
         A utility class to compute the total surface area and enclosed volume
         of an ASCII STL 3D model.
-        Using Gauss Divergence Therem  : https://en.wikipedia.org/wiki/Divergence_theorem
+        Using Gauss Divergence Theorem  : https://en.wikipedia.org/wiki/Divergence_theorem
 
         Usage Example
         -------------
